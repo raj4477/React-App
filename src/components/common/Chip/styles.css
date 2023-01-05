@@ -3,7 +3,9 @@
   background: linear-gradient(to right, #6190e8, #a7bfe8);
   color: #fff;
   padding: 0.3rem 0.5rem;
+  margin: auto;
   border-radius: 5px;
+  /* border-color: green; */
   width: fit-content;
   text-transform: capitalize;
 }

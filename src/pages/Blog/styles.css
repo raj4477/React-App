@@ -1,16 +1,30 @@
-.blog-wrap {
-  max-width: 700px;
-  margin: 0 auto;
+.link-box{
+  background-color: blue;
+  position: relative;
+  float: left;
+  margin: auto;
+  width: 115px;
+  
+  font-weight: bolder;
+ 
+  border-radius: 3rem;
+  /* text-align: center; */
+  /* margin-bottom: 2rem; */
+  /* display: block; */
 }
-
 .blog-goBack {
   text-decoration: none;
   font-size: 0.8rem;
   color: #a9a9a9;
   font-weight: 500;
   margin-bottom: 2rem;
-  display: block;
+  /* display: block; */
 }
+.blog-wrap {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 .blog-wrap header {
   text-align: center;
 }

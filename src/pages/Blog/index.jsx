@@ -11,7 +11,15 @@ const Blog = () => {
   const [blog, setBlog] = useState(null);
 
   useEffect(() => {
-    let blog = blogList.find((blog) => blog.id === parseInt(id));
+    fetch("http://localhost:8000/blogs/"+id).then((res) => {
+      return res.json()
+    }).then((resp) => {
+      console.log("Resp");
+      console.log(resp);
+      setBlog(resp);
+      console.log("Data");
+      // console.log(data);
+    })
     if (blog) {
       setBlog(blog);
     }
@@ -19,9 +27,12 @@ const Blog = () => {
 
   return (
     <>
+    <div className="link-box">
+
       <Link className='blog-goBack' to='/'>
-        <span> &#8592;</span> <span>Go Back</span>
+         &#8592;Go Back
       </Link>
+    </div>
       {blog ? (
         <div className='blog-wrap'>
           <header>
